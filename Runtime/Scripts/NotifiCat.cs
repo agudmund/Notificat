@@ -5,8 +5,8 @@ using System.Collections;
 namespace Jennifer.Things{
     public class NotifiCat : MonoBehaviour
     {
-        public GameObject header;
-        public GameObject body;
+        // public GameObject header;
+        // public GameObject body;
 
         // float maxExistenceTime = 10f;
 
