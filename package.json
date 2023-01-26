@@ -1,0 +1,29 @@
+{
+  "name": "com.darthkindergarten.notificat",
+  "version": "0.2.0",
+  "displayName": "Generic Notifications.",
+  "description": "Read them, or not, but make sure to enjoy them.",
+  "unity": "2021.3",
+  "unityRelease": "15f1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "dependencies": {
+  },
+  "samples": [
+    {
+      "displayName": "Prefab",
+      "description": "The Actual Core Prefab",
+      "path": "Samples~/SamplesHDRP/Prefab"
+    }
+  ],
+  "keywords": [
+    "gameobject",
+    "collectible"
+  ],
+  "author": {
+    "name": "Aevar Gudmundsson",
+    "email": "aevar.gudmundsson@gmail.com",
+    "url": "https://aevargudmundsson.wixsite.com/goodalltoyounight"
+  }
+}
