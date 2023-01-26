@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using TMPro;
+// using TMPro;
 
 // Needs a header font update.
 // should be grabbable by default.
@@ -13,54 +13,54 @@ using TMPro;
 namespace Jennifer.Things{
     public class NotificatCtrl : MonoBehaviour
     {
-        PlayerCtrl player;
-        public GameObject banner;
-        public GameObject[] stack;
-        NotifiCat page;
-        TextMeshPro header;
-        TextMeshPro body;
+        // PlayerCtrl player;
+        // public GameObject banner;
+        // public GameObject[] stack;
+        // NotifiCat page;
+        // TextMeshPro header;
+        // TextMeshPro body;
 
-        GameObject rez;
+        // GameObject rez;
 
-        Vector3 offset(Transform loc){
-            // Count active panels and offset them slightly forward so they stack
-            stack = GameObject.FindGameObjectsWithTag("msgPanel");
-            float posZ = loc.position.z + (stack.Length / 50f);
-            Vector3 _offset = new Vector3(loc.position.x,loc.position.y,posZ);
-            return _offset;
-        }
+        // Vector3 offset(Transform loc){
+        //     // Count active panels and offset them slightly forward so they stack
+        //     stack = GameObject.FindGameObjectsWithTag("msgPanel");
+        //     float posZ = loc.position.z + (stack.Length / 50f);
+        //     Vector3 _offset = new Vector3(loc.position.x,loc.position.y,posZ);
+        //     return _offset;
+        // }
 
-        public void Notificat(string _header, string _body, Transform loc){
-            player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCtrl>();
-            rez = GameObject.Instantiate(banner, offset(loc), Quaternion.identity, player.notebook);
+        // public void Notificat(string _header, string _body, Transform loc){
+        //     player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCtrl>();
+        //     rez = GameObject.Instantiate(banner, offset(loc), Quaternion.identity, player.notebook);
 
-            // Get the components of the new message panel.
-            page = rez.GetComponent<NotifiCat>();
-            header = page.header.GetComponent<TextMeshPro>();
-            body = page.body.GetComponent<TextMeshPro>();
+        //     // Get the components of the new message panel.
+        //     page = rez.GetComponent<NotifiCat>();
+        //     header = page.header.GetComponent<TextMeshPro>();
+        //     body = page.body.GetComponent<TextMeshPro>();
 
-            StartCoroutine(Meow(_header,_body));
-        }
+        //     StartCoroutine(Meow(_header,_body));
+        // }
 
-        IEnumerator Meow(string _header, string _body){
-            header.text = _header;
-            string message = "";
-            for(int i=0;i<_body.Length ;i++){
-                message += _body[i].ToString();
-                body.text = message;
-                yield return new WaitForSeconds(0.03f);
-            }
-            StartCoroutine(Activate());
+        // IEnumerator Meow(string _header, string _body){
+        //     header.text = _header;
+        //     string message = "";
+        //     for(int i=0;i<_body.Length ;i++){
+        //         message += _body[i].ToString();
+        //         body.text = message;
+        //         yield return new WaitForSeconds(0.03f);
+        //     }
+        //     StartCoroutine(Activate());
             
-        }
-        IEnumerator Activate(){
-            yield return new WaitForSeconds( 1f );
-            rez.transform.parent = null;
-            Rigidbody rb = rez.GetComponent<Rigidbody>();
-            rb.useGravity = true;
-            rb.isKinematic = false;
-            rb.AddTorque(new Vector3(Random.Range(0,30),0,Random.Range(-30,30)));
+        // }
+        // IEnumerator Activate(){
+        //     yield return new WaitForSeconds( 1f );
+        //     rez.transform.parent = null;
+        //     Rigidbody rb = rez.GetComponent<Rigidbody>();
+        //     rb.useGravity = true;
+        //     rb.isKinematic = false;
+        //     rb.AddTorque(new Vector3(Random.Range(0,30),0,Random.Range(-30,30)));
 
-        }
+        // }
     }
 }
