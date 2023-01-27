@@ -11,13 +11,6 @@
   "dependencies": {
     "com.unity.entities":"0.2.7"
   },
-  "registry": "https://packages.unity.com",
-"testables": [
-"com.unity.mathematics",
-"com.unity.entities",
-"com.unity.jobs"
-]
-}
   "samples": [
     {
       "displayName": "Prefab",
