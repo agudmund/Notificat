@@ -1,6 +1,6 @@
 {
   "name": "com.jennifer.notificat",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "displayName": "Generic Notifications.",
   "description": "Read them, or not, but make sure to enjoy them.",
   "unity": "2021.3",
@@ -9,7 +9,7 @@
   "changelogUrl": "https://example.com/changelog.html",
   "licensesUrl": "https://example.com/licensing.html",
   "dependencies": {
-    "com.unity.entities"
+    "com.unity.entities":"0.2.7"
   },
   "samples": [
     {
