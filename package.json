@@ -1,16 +1,23 @@
 {
   "name": "com.jennifer.notificat",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "displayName": "Generic Notifications.",
   "description": "Read them, or not, but make sure to enjoy them.",
   "unity": "2021.3",
   "unityRelease": "15f1",
   "documentationUrl": "https://example.com/",
   "changelogUrl": "https://example.com/changelog.html",
-  "licensesUrl": "https://example.com/licensing.html",
+  "licensesUrl": "https://example.com/licensing.html", 
   "dependencies": {
     "com.unity.entities":"0.2.7"
   },
+  "registry": "https://packages.unity.com",
+"testables": [
+"com.unity.mathematics",
+"com.unity.entities",
+"com.unity.jobs"
+]
+}
   "samples": [
     {
       "displayName": "Prefab",
