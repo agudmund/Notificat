@@ -2,9 +2,9 @@ using UnityEngine;
 using System.Collections;
 // using TMPro;
 
-namespace Jennifer.Things{
-    public class NotifiCat : MonoBehaviour
-    {
+// namespace Jennifer.Things{
+//     public class NotifiCat : MonoBehaviour
+//     {
         // public GameObject header;
         // public GameObject body;
 
@@ -14,5 +14,5 @@ namespace Jennifer.Things{
         //     yield return new WaitForSeconds( maxExistenceTime );
         //     Destroy(gameObject);
         // }
-    }
-}
+//     }
+// }
